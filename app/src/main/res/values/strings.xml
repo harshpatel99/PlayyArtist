@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">InArtist</string>
+    <string name="new_post">New Post</string>
+    <string name="please_wait">Please Wait</string>
+    <string name="upload">Upload</string>
+    <string name="uploading">Uploading...</string>
+    <string name="sign_in">Sign In</string>
+    <string name="e_mail">E-mail</string>
+    <string name="password">Password</string>
+    <string name="new_category">New Category</string>
+    <string name="new_artist">New Artist</string>
+    <string name="browse">Browse</string>
+    <string name="category">Category</string>
+    <string name="add">Add</string>
+    <string name="delete_post">Delete Post</string>
+    <string name="poll_vs">Poll / Vs</string>
+    <string name="vs">VS</string>
+    <string name="now">NOW</string>
+    <string name="vote">VOTE</string>
+    <string name="activate_poll">Activate Poll</string>
+    <string name="select_post">Select Post</string>
+    <string name="new_collection">New Collection</string>
+    <string name="add_comic_artist">Add Comic Artist</string>
+    <string name="add_comic">Add Comic</string>
+</resources>

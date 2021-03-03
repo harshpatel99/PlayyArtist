@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    tools:context=".activities.DeletePostActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".activity.WallActivity">
+
+        <include
+            android:id="@+id/selectProgressBar"
+            layout="@layout/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/selectBackImageView"
+            app:layout_constraintEnd_toStartOf="@id/wallReferenceView"
+            app:layout_constraintTop_toTopOf="@id/selectBackImageView" />
+
+        <View
+            android:id="@+id/wallReferenceView"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            app:layout_constraintBottom_toBottomOf="@id/selectBackImageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/selectBackImageView" />
+
+        <ImageView
+            android:id="@+id/selectBackImageView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="16dp"
+            android:background="@drawable/circle"
+            android:padding="4dp"
+            android:src="@drawable/ic_round_arrow_back_24"
+            android:tint="@color/backgroundGradientDark"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/wallTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="2dp"
+            android:textColor="@color/light"
+            android:textSize="28sp"
+            android:text="@string/select_post"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/selectBackImageView"
+            app:layout_constraintStart_toEndOf="@id/selectBackImageView"
+            app:layout_constraintTop_toTopOf="@id/selectBackImageView" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/selectRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/wallTitleTextView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

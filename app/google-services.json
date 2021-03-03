@@ -1,0 +1,77 @@
+{
+  "project_info": {
+    "project_number": "148020150038",
+    "firebase_url": "https://inart-900ca.firebaseio.com",
+    "project_id": "inart-900ca",
+    "storage_bucket": "inart-900ca.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:148020150038:android:ad30db4e07bfc7d6c95a37",
+        "android_client_info": {
+          "package_name": "com.twogentle.inartist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "148020150038-uhmma9mqsdei76nhirtq0rn9m92pehmg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwOVNi9623Q8FeVtBnXDFoZjNHfnbSSXs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "148020150038-uhmma9mqsdei76nhirtq0rn9m92pehmg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:148020150038:android:2ceb23d113437404c95a37",
+        "android_client_info": {
+          "package_name": "com.twogentle.wall"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "148020150038-pj6dbkp0j364oclgdo9erqg05ke8ii4c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.twogentle.wall",
+            "certificate_hash": "2d9af632766351cd0981fea84edd33f58e2b62cf"
+          }
+        },
+        {
+          "client_id": "148020150038-uhmma9mqsdei76nhirtq0rn9m92pehmg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwOVNi9623Q8FeVtBnXDFoZjNHfnbSSXs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "148020150038-uhmma9mqsdei76nhirtq0rn9m92pehmg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

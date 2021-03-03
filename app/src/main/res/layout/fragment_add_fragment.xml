@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true">
+
+        <TextView
+            android:id="@+id/postTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/new_post"
+            android:textColor="@color/light"
+            android:textSize="@dimen/signInUpTextSize"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/postImageUrlTextView"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            android:hint="Post Image Url"
+            app:boxStrokeColor="@color/light"
+            app:hintTextColor="@color/backgroundGradientLight"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/postTitle"
+            app:startIconDrawable="@drawable/ic_round_settings_ethernet_24"
+            app:startIconTint="@color/backgroundGradientLight">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/postImageUrlEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/backgroundGradientLight" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/postTypeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:paddingBottom="2sp"
+            android:text="Post Type ( Free | Premium )"
+            android:textColor="@color/light"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@id/postTypeSpinner"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/postImageUrlTextView" />
+
+        <Spinner
+            android:id="@+id/postTypeSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/light"
+            android:padding="8dp"
+            android:popupBackground="@color/light"
+            app:layout_constraintBottom_toTopOf="@id/postArtistTitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/postTypeTitle" />
+
+        <TextView
+            android:id="@+id/postArtistTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:paddingBottom="2sp"
+            android:text="Artist"
+            android:textColor="@color/light"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@id/postArtistSpinner"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/postTypeSpinner" />
+
+        <Spinner
+            android:id="@+id/postArtistSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/light"
+            android:padding="8dp"
+            android:popupBackground="@color/light"
+            app:layout_constraintBottom_toTopOf="@id/postCategoryTitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/postArtistTitle" />
+
+        <TextView
+            android:id="@+id/postCategoryTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:paddingBottom="2sp"
+            android:text="Category"
+            android:textColor="@color/light"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@id/postCategorySpinner"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/postArtistSpinner" />
+
+        <Spinner
+            android:id="@+id/postCategorySpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/light"
+            android:padding="8dp"
+            android:popupBackground="@color/light"
+            app:layout_constraintBottom_toTopOf="@id/postCollectionTitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/postCategoryTitle" />
+
+        <TextView
+            android:id="@+id/postCollectionTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:paddingBottom="2sp"
+            android:text="Collection ( MLBB | PUBG[Future] )"
+            android:textColor="@color/light"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@id/postCollectionSpinner"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/postCategorySpinner" />
+
+        <Spinner
+            android:id="@+id/postCollectionSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/light"
+            android:padding="8dp"
+            android:popupBackground="@color/light"
+            app:layout_constraintBottom_toTopOf="@id/postUploadCard"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/postCollectionTitle" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/postUploadCard"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="32dp"
+            app:cardBackgroundColor="@color/light"
+            app:cardCornerRadius="@dimen/wall_corner_radius"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/postCollectionSpinner">
+
+            <TextView
+                android:id="@+id/postUploadTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:gravity="center"
+                android:text="@string/upload"
+                android:textColor="@color/backgroundGradientDark"
+                android:textSize="20sp" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="home_card_elevation">2dp</dimen>
+    <dimen name="home_card_radius">16dp</dimen>
+    <dimen name="iconPostActionHeight">35dp</dimen>
+    <dimen name="iconPostActionWidth">35dp</dimen>
+    <dimen name="wall_corner_radius">8dp</dimen>
+    <dimen name="signInUpTextSize">48sp</dimen>
+</resources>
